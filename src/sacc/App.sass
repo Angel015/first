@@ -1,0 +1,373 @@
+@import decor
+
+body
+  background: #FFFFFF
+  overflow-x: hidden
+  width: 100%
+  max-width: 1438px
+  margin: auto
+.Header
+  background: url(../img/bg.png) no-repeat
+  background-size: cover
+  width: 100%
+  padding: 3% 0
+
+.TopNav
+  width: 100%
+  margin: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: $footer
+
+.Logo
+  display: flex
+  margin-left: 30px
+  align-items: center
+  & p
+    color: #FFFFFF
+    font-size: 24px
+    font-weight: bold
+  & h5
+    margin: 0px
+
+.Menu
+  margin-right: 30px
+  width: 25%
+  display: flex
+  flex-wrap: nowrap
+  & a
+    margin-left: 10px
+    list-style: none
+    text-decoration: none
+    color: #FFFFFF
+    font-size: 16px
+    font: $p
+    &:hover
+      color: $button
+
+.icon
+  display: none
+
+.HederContent
+  width: 55%
+  text-align: center
+  margin: 100px auto
+  & p .more
+    transition: all 1s ease
+
+  & p, h1
+    color: #FFFFFF
+  & .border
+    margin: 40px auto
+  & button
+    margin-top: 40px
+
+
+.text-enter
+  opacity: 0.01
+
+.text-enter.example-enter-active
+  opacity: 1
+  transition: 400ms ease-out
+.text-leave
+  opacity: 1
+
+.text-leave.text-leave-active
+  opacity: 0.01
+  transition: 400ms ease-out
+
+.About
+  background: $bg
+  display: flex
+  justify-content: space-between
+  padding: 150px 0px 150px 42px
+  position: relative
+  & svg
+    position: absolute
+    top: 0
+    left: -1px
+    width: 100%
+  &_content
+    height: auto
+    width: 45%
+    margin-right: 39px
+  & a
+    display: block
+    margin: auto
+    list-style: none
+    color: $button
+    text-transform: uppercase
+  &_img
+    background: url("../img/Macbook.png") no-repeat
+    background-size: contain
+    width: 50%
+    max-width: 700px
+    margin-top: 20px
+    position: relative
+    &_vid
+
+      width: 76%
+      max-width: 532px
+      position: absolute
+      top: 8%
+      left: 12%
+
+
+.border
+  margin: 35px 0 45px 0
+
+.servise
+  text-align: center
+  padding: 150px 0
+  & .border
+    margin: 35px auto
+  & p
+    width: 681px
+    margin: auto
+  &_items
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: auto
+    & p
+      width: 135px
+      margin-top: 146px
+      color: $button
+  &_item1
+    margin: 70px 80px 0 80px
+    display: flex
+    flex-direction: column
+    border: #c8c8c8 1px solid
+    border-radius: 50%
+    width: 131px
+    height: 131px
+    background: url("../img/1.png") no-repeat 50% 50%
+  &_item2
+    margin: 70px 80px 0 80px
+    display: flex
+    flex-direction: column
+    border: #c8c8c8 1px solid
+    border-radius: 50%
+    width: 131px
+    height: 131px
+    background: url("../img/2.png") no-repeat 50% 50%
+  &_item3
+    margin: 70px 80px 0 80px
+    display: flex
+    flex-direction: column
+    border: #c8c8c8 1px solid
+    border-radius: 50%
+    width: 131px
+    height: 131px
+    background: url("../img/3.png") no-repeat 50% 50%
+  &_item4
+    margin: 70px 80px 0 80px
+    display: flex
+    flex-direction: column
+    border: #c8c8c8 1px solid
+    border-radius: 50%
+    width: 131px
+    height: 131px
+    background: url("../img/4.png") no-repeat 50% 50%
+
+.quotes
+  height: auto
+  padding: 200px 0
+  text-align: center
+  & h5
+    font-size: 158px
+    color: #ed145b
+  &_1
+    transform: rotate(180deg)
+  & p
+    font-family: $h1
+    font-size: 25px
+    color: #FFFFFF
+    line-height: 40px
+    margin: 30px auto
+    width: 70%
+
+.price
+  text-align: center
+  padding: 150px 0 137px 0
+
+  & p
+    width: 681px
+    margin: auto
+  & .border
+    margin: 35px auto
+  &_items
+    margin: 92px auto 0 auto
+    display: flex
+    justify-content: center
+    & p
+      width: 150px
+      margin-top: 0
+  &_item
+    margin: 0 15px
+    width: 263px
+    height: 466px
+    background: #ffffff
+  &_top
+    background: #5a5a5a
+    padding: 33px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 84px
+    &:hover
+      background: $button
+    & p
+      color: #f4f4f4
+      margin: 5px auto
+    &_1
+      align-items: flex-end
+      display: flex
+      justify-content: center
+      & h5
+        color: #f4f4f4
+        font-family: $p
+        font-size: 20px
+        margin: 0
+      & h4
+        color: #f4f4f4
+        font-family: $p
+        font-size: 50px
+        margin: 0
+  &_name
+    width: 200px
+    margin: -25px auto
+    background: #f4f4f4
+    height: 50px
+    border-radius: 25px
+    & p
+      padding-top: 11px
+  &_bottom
+    margin-top: 64px
+    & li, ul
+      list-style: none
+      margin: 0
+      padding: 0
+  & button
+    margin-top: 38px
+
+.profit
+  display: flex
+  flex-wrap: wrap
+  max-width: 1200px
+  justify-content: center
+  margin: 128px auto 112px auto
+  &_box
+    margin: 22px
+    width: 345px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+  & img
+    margin: 0
+    padding: 0
+  &_text
+    width: 262px
+    & h6
+      color: $button
+      margin: 0
+
+.box
+  height: 200px
+  background: $button
+  display: flex
+  padding: 0 4%
+  align-items: center
+  margin: auto
+  justify-content: center
+  & h1
+    text-transform: uppercase
+    color: #FFFFFF
+  & button
+    color: $button
+    background: #FFFFFF
+    margin: 0 20px 0 20px
+    text-transform: uppercase
+.social
+
+  margin: 10px
+  & ul
+    margin: -20px
+    list-style: none
+    display: flex
+    padding: auto
+    & li
+      margin: 10px
+      & svg
+        width: 25px
+        height: 25px
+        &:hover
+          width: 30px
+          height: 30px
+
+
+.news
+  text-align: center
+  padding: 150px 0 64px 0
+
+  & p
+    width: 681px
+    margin: auto
+  & .border
+    margin: 35px auto
+  &_grid
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 67px auto
+  &_box
+    width: 360px
+    height: 390px
+    background: #f4f4f4
+    margin: 30px auto
+    position: relative
+    & svg
+      position: absolute
+      left: 0
+      top: 240px
+      width: 360px
+  &_img
+    position: relative
+    &:hover
+      background: #ed145b
+      opacity: 0.85
+      width: 360px
+      height: 250px
+  &_text
+    margin: 25px auto
+    width: 307px
+    text-align: left
+    & p
+      width: 307px
+      margin-top: 10px
+    & h6
+      margin: 0
+
+.footer
+  background: #2b2b2b
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  align-items: center
+  & p
+    color: #FFFFFF
+
+.item
+  margin-right: 340px
+  &_1
+    margin-left: 340px
+
+@import "media"
+
+
+
+
+
+
